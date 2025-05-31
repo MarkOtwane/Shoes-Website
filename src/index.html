@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes Website</title>
     <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
     <header>
         <div class="socials">
             <!-- fb, inst, youtube, pinterest -->
+             <ion-icon name="logo-facebook"></ion-icon>
+             <ion-icon name="logo-instagram"></ion-icon>
+             <ion-icon name="logo-youtube"></ion-icon>
+             <ion-icon name="logo-pinterest"></ion-icon>
         </div>
         <div class="offers">
             <p><strong>Special Offer</strong>: Free Shipping on all the orders above</p>
             <p>$100</p>
         </div>
-        <div class="navc">
+        <div class="nav">
             <p><a href="">Contact</a></p>
             <p><a href="">Cart</a></p>
             <p><a href="">Login</a></p>
@@ -29,25 +37,25 @@
                 <p>Online Store</p>
             </div>
             <div class="navs">
-                <li><a href="">Home<select>
-                    <option value="1">Home V1</option>
-                    <option value="2">Home V2</option>
-                </select></a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
-                <li>Page<select>
-                    <option value="1"><a href="">About Us</a></option>
-                    <option value="2"><a href="">Shop</a></option>
-                    <option value="3"><a href="">Blog</a></option>
-                    <option value="4"><a href="">Single Product</a></option>
-                    <option value="5"><a href="">Single Post</a></option>
-                    <option value="6"><a href="">Style</a></option>
-                    <option value="7"><a href="">Cart</a></option>
-                    <option value="8"><a href="">Login</a></option>
+                <li><select><option value="1">Page</option>
+                    <option value="2"><a href="">About Us</a></option>
+                    <option value="3"><a href="">Shop</a></option>
+                    <option value="4"><a href="">Blog</a></option>
+                    <option value="5"><a href="">Single Product</a></option>
+                    <option value="6"><a href="">Single Post</a></option>
+                    <option value="7"><a href="">Style</a></option>
+                    <option value="8"><a href="">Cart</a></option>
+                    <option value="9"><a href="">Login</a></option>
                 </select></li>
             </div>
             <div class="icons">
                 <!-- person, cart, search icons -->
+                 <ion-icon name="person-outline"></ion-icon>
+                 <ion-icon name="cart-outline"></ion-icon>
+                 <ion-icon name="search-outline"></ion-icon>
             </div>
         </header>
         <div class="main">
@@ -56,12 +64,12 @@
             </div>
             <div class="right">
                 <img src="/images/card-image2T.jpg" alt="">
-                <img src="/images/card-image2T.jpg" alt="">
+                <img src="/images/card-image3.jpg" alt="">
             </div>
         </div>
         <div class="discount">
             <div class="left">
-                <h3>10% OFF Discount Coupons</h3>
+                <h3>10% OFF Discount <br>Coupons</h3>
                 <p>Subscribe us to get 10% OFF on all the purchases</p>
             </div>
             <div class="right">
@@ -70,7 +78,7 @@
             </div>
         </div>
     </div>
-    <div class="featuredProducts">
+    <div class="featuredProducts" id="availableProducts">
         <div class="top">
             <h2>FEATURED PRODUCTS</h2>
             <h3>VIEW ALL</h3>
@@ -118,7 +126,7 @@
         </div>
     </div>
 
-    <div class="latestProducts">
+    <div id="latestProducts" class="featuredProducts">
         <div class="top">
             <h2>LATEST PRODUCTS</h2>
             <p>VIEW ALL</p>
@@ -161,6 +169,7 @@
             </div>
         </div>
     </div>
+    <hr>
 
     <footer>
         <div class="footer">
